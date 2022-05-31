@@ -1,14 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>首頁 - ExerLearn</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icon.png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="h5">
-        大家好！
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">請稍後...</span>
+        </div>
     </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top p-0">
+        <a href="home.html" class="navbar-brand d-sm-flex align-items-center d-none d-sm-block">
+            <img class="img-fluid p-4 pe-0" src="img/logo.png" style="max-height: 112px;width: auto;">
+        </a>
+        <a href="home.html" class="navbar-brand d-flex align-items-center d-sm-none">
+            <img class="img-fluid p-3 pe-0" src="img/logo.png" style="max-height: 92px;width: auto;">
+        </a>
+
+        <button type="button" class="navbar-toggler me-3 rounded-3 bg-primary-2"
+            style="padding-top: 5px;padding-bottom: 2px;padding-left: 14px;" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <i class="bi bi-list text-primary" style="font-size: 30px;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto text-nowrap">
+                <a href="home.html" class="nav-item align-self-center nav active">首頁</a>
+                <a href="about.html" class="nav-item align-self-center nav">關於我們</a>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle" data-bs-toggle="dropdown">學習天地</a>
+                    <div class="dropdown-menu fade-down">
+                        <a href="search.html" class="dropdown-item">查詢運動</a>
+                        <a href="recommend.html" class="dropdown-item">運動推薦</a>
+                        <a href="reserve.html" class="dropdown-item">課程學習</a>
+                    </div>
+                </div>
+                <div class="align-self-center nav-item dropdown">
+                    <a class="nav dropdown-toggle me-lg-3" data-bs-toggle="dropdown">會員中心</a>
+                    <div class="dropdown-menu fade-down mb-lg-0 mb-2">
+                        <a href="information.html" class="dropdown-item">我的資訊</a>
+                        <a href="healthy.html" class="dropdown-item">健康護照</a>
+                        <a href="record.html" class="dropdown-item">購買紀錄</a>
+                    </div>
+                </div>
+                <a href="login.html" class="btn-outline-primary py-lg-4 px-lg-5 fs-5-5" type="button">登入 / 註冊
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- 歡迎看板(Welcome) Start -->
+    <div class="container-fluid p-0">
+        <div id="carouselIndicators" data-wow-delay="0.1s" class="carousel slide wow fadeIn" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel-0.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 歡迎看板(Welcome) End -->
+
+    <!-- 最新資訊(Information) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-1">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">最新資訊<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-md-8 col-sm-9 col-12 mb-3">
+                <div class="bg-primary-2 p-3 row justify-content-center wow fadeIn mx-auto" style="width: 85%;"
+                    data-wow-delay="0.4s">
+                    <div style="border-radius: 1rem">
+                        <a target="_blank" href="http://vamossports.com.tw/?p=41014"
+                            class="list-group-item list-group-item-action">2022聽障奧運》網球再添雙銀1銅 我代表團總計2金7銀8銅</a>
+                        <!--
+                        <a target="_blank" href="https://helloyishi.com.tw/fitness/fitness-motivation/10-benefits-of-regular-exercise/" class="list-group-item list-group-item-action">規律運動10大好處：減肥、助眠、護膚、更「性」福</a>
+                    <a href="https://ucarer.tw/blog/article/1004-%E6%9C%89%E6%95%88%E7%9A%84%E9%81%8B%E5%8B%95%EF%BC%8C%E8%AE%93%E4%BD%A0%E5%BE%9E%E3%80%8C%E5%81%A5%E5%BA%B7%E3%80%8D%E8%AE%8A%E3%80%8C%E5%BC%B7%E5%81%A5%E3%80%8D" class="list-group-item list-group-item-action">有效的運動，讓你從「健康」變「強健」</a>-->
+                        <a target="_blank"
+                            href="https://opinion.udn.com/opinion/story/122354/5663331?from=udn-referralnews_ch2artbottom"
+                            class="list-group-item list-group-item-action">東奧奪牌背後：台灣體育政策的演進發展史（上）</a>
+                        <a target="_blank" href="https://www.cw.com.tw/article/5117587"
+                            class="list-group-item list-group-item-action">楊勇緯東奧摘銀刷新柔道史，專訪哽咽：是家人成就現在的我</a>
+                        <a target="_blank" href="https://udn.com/news/story/122355/5631335"
+                            class="list-group-item list-group-item-action">舉重／從討厭練習到征服奧運 郭婞淳完成奪金最後一哩</a>
+                        <a target="_blank"
+                            href="https://org.vghks.gov.tw/orth/News_Content.aspx?n=6D312281C41BB3E8&sms=245CBC1D4FA7E4EF&s=7D878AB01C0C0E87"
+                            class="list-group-item list-group-item-action">運動的好處及方式</a>
+                        <a target="_blank"
+                            href="https://blog.worldgymtaiwan.com/sports-science-5-benefits-of-regular-exercise"
+                            class="list-group-item list-group-item-action">運動好處多！你該運動的五大理由</a>
+                        <!--<a target="_blank" href="https://health.ltn.com.tw/article/breakingnews/2345001"
+                        class="list-group-item list-group-item-action">英國研究：「輕運動」助降低老人死亡風險</a>
+                    <a target="_blank" class="list-group-item list-group-item-action disabled">A disabled link item</a>-->
+                    </div>
+                    <a href="#" class="text-end link-secondary mt-2 fst-italic">更多資訊<i
+                            class="bi bi-caret-right-fill ms-1 me-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最新資訊(Information) End -->
+
+    <!-- 運動介紹(Sports) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-3">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">運動介紹<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 category">
+        <div class="row justify-content-center">
+            <div class="form-signin col-md-8 col-sm-9 col-12 mb-3">
+                <div class="bg-primary-2 pt-3 pb-2-5 row mx-auto" style="width: 85%;">
+                    <div class="position-relative overflow-hidden col ms-3 me-1-5 wow zoomIn" data-wow-delay="0.1s"
+                        style="border-top-left-radius: 1rem">
+                        <a href="#"><img class="img-fluid w-100" src="img/sports-1.png" alt="輕度運動">
+                            <div class="h5 bg-primary-2 position-absolute text-gray text-center rounded-3"
+                                style="right: .75rem;bottom: .75rem;padding-top: 8px;padding-bottom: 5px;padding-left: 8px;padding-right: 6px;">
+                                輕度運動
+                            </div>
+                        </a>
+                    </div>
+                    <div class="position-relative overflow-hidden col ms-1-5 me-3 wow zoomIn" data-wow-delay="0.2s"
+                        style="border-top-right-radius: 1rem">
+                        <a href="#"><img class="img-fluid w-100" src="img/sports-2.png" alt="中度運動">
+                            <div class="h5 bg-primary-2 position-absolute text-gray text-center rounded-3"
+                                style="left: .75rem;bottom: .75rem;padding-top: 8px;padding-bottom: 5px;padding-left: 8px;padding-right: 6px;">
+                                中度運動
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-primary-2 pb-3 row mx-auto" style="width: 85%;">
+                    <div class="position-relative overflow-hidden col ms-3 me-1-5 wow zoomIn" data-wow-delay="0.3s"
+                        style="border-bottom-left-radius: 1rem">
+                        <a href="#"><img class="img-fluid w-100" src="img/sports-3.png" alt="重度運動">
+                            <div class="h5 bg-primary-2 position-absolute text-gray text-center rounded-3"
+                                style="right: .75rem;top: .75rem;padding-top: 8px;padding-bottom: 5px;padding-left: 8px;padding-right: 6px;">
+                                重度運動
+                            </div>
+                        </a>
+                    </div>
+                    <div class="position-relative overflow-hidden col ms-1-5 me-3 wow zoomIn" data-wow-delay="0.4s"
+                        style="border-bottom-right-radius: 1rem">
+                        <a href="#"><img class="img-fluid w-100" src="img/sports-4.png" alt="有氧運動">
+                            <div class="h5 bg-primary-2 position-absolute text-gray text-center rounded-3"
+                                style="left: .75rem;top: .75rem;padding-top: 8px;padding-bottom: 5px;padding-left: 8px;padding-right: 6px;">
+                                有氧運動
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 運動介紹(Sports) End -->
+
+    <!-- 課程學習(Exercise) Start -->
+    <div class="container-xxl p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-xl-6 col-lg-7 col-md-8 col-sm-9 col-12 mt-3">
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                    <h2 class="text-center text-primary"><img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-right: 15px;">課程學習<img class="pb-2" src="img/icon.png"
+                            style="height: 5%;width: 5%;margin-left: 15px;"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="form-signin col-md-8 col-sm-9 col-12 mb-3">
+                <div id="carouselIndicators1" data-wow-delay="0.4s" class="carousel slide wow fadeIn"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner mx-auto" style="width: 85%;">
+                        <div class="carousel-item active">
+                            <a href="exercise-1.html"><img src="img/exercise-1.png" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="exercise-2.html"><img src="img/exercise-2.png" class="d-block w-100" alt="..."></a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/exercise-3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/exercise-4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/exercise-5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/exercise-6.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators mt-1">
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <button class="carousel-control-prev" style="padding-right: 4rem;" type="button"
+                        data-bs-target="#carouselIndicators1" data-bs-slide="prev">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" style="padding-left: 4rem;"
+                        data-bs-target="#carouselIndicators1" data-bs-slide="next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 課程學習(Exercise) End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-danger wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pt-2 pb-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary-1 mb-3">快速連結</h4>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="about.html">關於我們</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="search.html">查詢運動</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="recommend.html">運動推薦</a>
+                    <a class="btn btn-link" style="font-family: 源泉圓體;" href="reserve.html">課程學習</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary-1 mb-3">聯絡資訊</h4>
+                    <p class="mb-2 text-white"><i class="fa fa-map-marker-alt me-3 text-white"></i>國立高雄科技大學 資訊管理系</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118107@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118113@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118114@nkust.edu.tw</p>
+                    <p class="mb-2 text-white"><i class="fa fa-envelope me-3 text-white"></i>C108118117@nkust.edu.tw</p>
+                    <!--<div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>-->
+                </div>
+                <!--<div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container text-white">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2022 ExerLearn - 國立高雄科技大學 資訊管理系 專題製作</div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="home.html" class="text-white">首頁</a>
+                            <a href="question.html" class="text-white">問題</a>
+                            <a href="help.html" class="text-white">幫助</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a class="btn-lg btn-primary btn-lg-square back-to-top d-none d-sm-block" style="padding-top: 10px;"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
